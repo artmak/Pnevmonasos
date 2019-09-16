@@ -66,12 +66,26 @@
             float: left;
             overflow: hidden;
             margin: 10px 1%;
-            min-width: 535px;
-            max-width: 695px;
-            max-height: 460px;
-            width: 48%;
+            min-width: 250px;
+            max-width: 350px;
+            max-height: 360px;
+            #width: 48%;
             height: auto;
             background: #3085a3;
+            text-align: center;
+            cursor: pointer;
+        }
+        .grid figure.compare {
+            position: relative;
+            float: left;
+            overflow: hidden;
+            margin: 10px 1%;
+            min-width: 250px;
+            max-width: 250px;
+            max-height: 240px;
+            width: 48%;
+            height: auto;
+            #background: #3085a3;
             text-align: center;
             cursor: pointer;
         }
@@ -117,16 +131,17 @@
             opacity: 0;
         }
 
-        .grid figure h3 {
+        .grid figure h4 {
             word-spacing: -0.15em;
-            font-weight: 300;
+            font-weight: 500;
+            text-shadow: 1px 2px 1px #0a0a0a;
         }
 
-        .grid figure h3 span {
+        .grid figure h4 span {
             font-weight: 800;
         }
 
-        .grid figure h3,
+        .grid figure h4,
         .grid figure p {
             margin: 0;
         }
@@ -143,10 +158,20 @@
             background: #2f3238;
         }
 
-        figure.effect-julia img {
+        figure.effect-julia img.compare {
+            margin: -20px 0px 0px 0px;
             max-width: none;
-            min-width: 540px;
-            height: 400px;
+            min-width: 263px;
+            height: 345px;
+            -webkit-transition: opacity 1s, -webkit-transform 1s;
+            transition: opacity 1s, transform 1s;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        figure.effect-julia img.catalog {
+            max-width: none;
+            min-width: 250px;
+            height: 300px;
             -webkit-transition: opacity 1s, -webkit-transform 1s;
             transition: opacity 1s, transform 1s;
             -webkit-backface-visibility: hidden;
@@ -164,8 +189,8 @@
 
         figure.effect-julia p {
             display: inline-block;
-            margin: 0 0 0.25em;
-            padding: 0.4em 1em;
+            margin: 0 0 1px 0;
+            padding: 0px 32px 1px 5px;
             background: rgba(255,255,255,0.9);
             color: #2f3238;
             text-transform: none;
@@ -257,6 +282,7 @@
             margin-top: 14px;
         }
         .t-align img{
+            opacity: 0.8;
             border-bottom-color: rgb(19, 54, 141);
             border-bottom-style: none;
             border-bottom-width: 0px;
@@ -284,7 +310,7 @@
         }
         .preview-details{
             box-sizing: border-box;
-            color: rgb(153, 153, 153);
+            color: rgb(33, 37, 41);
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 12px;
             line-height: 24px;
@@ -398,16 +424,15 @@
             </div>
             <div class="col-md-12 row" id="compare_portfolio-list">
                 <!-- PORTFOLIO ITEMS-->
-                <div class="col-6 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                     <div class="grid">
-                        <figure class="effect-julia">
-                            <img src="/images/projects/phoenix_p7_per.jpg" alt="img21">
+                        <figure class="effect-julia compare">
+                            <img class="compare" src="/images/projects/phoenix_p7_per.jpg" alt="img21">
                             <figcaption>
-                                <h3>Пневмонасос SK Duoteck <span>сравнение</span></h3>
+                                <h4>Пневмонасос SK Duoteck <span>сравнение</span></h4>
                                 <div>
                                     <p>Особенности пневматических насосов</p>
-                                    <p>Преимущества пневматических насосов</p>
-                                    <p>Таблица стравнения</p>
+
 
                                 </div>
                                 <a href="compare.html" class="compare_more">View more</a>
@@ -415,16 +440,15 @@
                         </figure>
                     </div>
                 </div>
-                <div class="col-6 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                     <div class="grid">
-                        <figure class="effect-julia">
-                            <img src="/images/projects/phoenix_p7_pp.jpg" alt="img21">
+                        <figure class="effect-julia compare">
+                            <img class="compare" src="/images/projects/phoenix_p7_pp.jpg" alt="img21">
                             <figcaption>
-                                <h3>Пневмонасос SK Duoteck <span>принцип работы</span></h3>
+                                <h4>Пневмонасос SK Duoteck <span>принцип работы</span></h4>
                                 <div>
                                     <p>Особенности пневматических насосов</p>
-                                    <p>Преимущества пневматических насосов</p>
-                                    <p>Таблица стравнения</p>
+
 
                                 </div>
                                 <a href="principle_of_operation.html" class="compare_more">View more</a>
@@ -432,15 +456,14 @@
                         </figure>
                     </div>
                 </div>
-                <div class="col-6 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                     <div class="grid">
-                        <figure class="effect-julia">
-                            <img src="/images/projects/phoenix_pf700_aisi.jpg" alt="img21">
+                        <figure class="effect-julia compare">
+                            <img class="compare" src="/images/projects/phoenix_pf700_aisi.jpg" alt="img21">
                             <figcaption>
-                                <h3>Пневмонасос SK Duoteck <span>подбор</span></h3>
+                                <h4>Пневмонасос SK Duoteck <span>подбор</span></h4>
                                 <div>
-                                    <p>Особенности пневматических насосов</p>
-                                    <p>Преимущества пневматических насосов</p>
+
                                     <p>Таблица стравнения</p>
 
                                 </div>
@@ -449,16 +472,15 @@
                         </figure>
                     </div>
                 </div>
-                <div class="col-6 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                     <div class="grid">
-                        <figure class="effect-julia">
-                            <img src="/images/projects/phoenix_pf700_aisi.jpg" alt="img21">
+                        <figure class="effect-julia compare">
+                            <img class="compare" src="/images/projects/phoenix_pf700_aisi.jpg" alt="img21">
                             <figcaption>
-                                <h3>Пневмонасос SK Duoteck <span>примеры монтажа</span></h3>
+                                <h4>Пневмонасос SK Duoteck <span>примеры монтажа</span></h4>
                                 <div>
-                                    <p>Особенности пневматических насосов</p>
+
                                     <p>Преимущества пневматических насосов</p>
-                                    <p>Таблица стравнения</p>
 
                                 </div>
                                 <a href="installation.html" class="compare_more">View more</a>
@@ -667,9 +689,54 @@
 	<div id="loader">
 	    <div class="loader-icon"></div>
 	</div>
-	<div class="col-md-12" id="portfolio-list">
+	<div class="col-md-12 row" id="portfolio-list">
 		<!-- PORTFOLIO ITEMS-->
-		<ul class="cbp-rfgrid">
+        <div class="col-4">
+            <div class="grid">
+                <figure class="effect-julia">
+                    <img class="catalog" src="images/main_page/st.png" alt="img21">
+                    <figcaption>
+                        <h4>Мембранные пневмонасосы серии <span>- P7 - 1000</span></h4>
+                        <div>
+                            <p>Классические мембранные пневмонасосы</p>
+
+                        </div>
+                        <a href="standart.html" class="more">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="grid">
+                <figure class="effect-julia">
+                    <img class="catalog" src="images/main_page/atex.png" alt="img21">
+                    <figcaption>
+                        <h4>Пневмонасосы серии <span>- ATEX</span></h4>
+                        <div>
+                            <p>Взрывозащитные мембранные насосы</p>
+
+                        </div>
+                        <a href="atex.html" class="more">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="grid">
+                <figure class="effect-julia">
+                    <img class="catalog" src="images/main_page/fd.png" alt="img21">
+                    <figcaption>
+                        <h4>Пищевые насосы <span></span></h4>
+                        <div>
+                            <p>Пневмонасос для пищевой проммышленности</p>
+
+                        </div>
+                        <a href="food.html" class="more">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+		<ul class="cbp-rfgrid" hidden>
 		
         <!-- PROJECT -->	
         <li class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
