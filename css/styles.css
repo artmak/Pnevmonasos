@@ -110,7 +110,7 @@ h1 {
 	font-size: 55px;
 }
 h2 {
-	font-size: 45px !important;
+	font-size: 45px;
 	line-height: 55px;
 }
 h3 {
@@ -479,17 +479,23 @@ input:focus {
 /*----  SECTION:  HOME > INTRO AND SHORT MSGS   ----*/
 .intro {
 	text-align: center;
+	font-size: 46px !important;
+	font-weight: 700;
+	text-transform: uppercase;
 	color: #FFF;
-	margin-top: 25%;
-	line-height: 65px;
+	margin-top: 15%;
+	line-height: 35px;
 	z-index: 0;
 }
 
 .sub-intro {
+	padding-top: 10px;
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
-    color: #FFF;
-    font-weight: 300;
+	color: #fff;
+	font-size: 36px !important;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 /* Short Messages */
