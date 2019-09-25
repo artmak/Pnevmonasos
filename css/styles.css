@@ -16,7 +16,7 @@ html {
 body {
 	font-family: 'Lato', sans-serif !important;
 	font-size: 14px;
-	/*color: #808080;*/
+	color: #737373;
 	font-weight: normal;
 	overflow-x: hidden !important;
 	line-height: 25px;
@@ -107,23 +107,23 @@ h1,h2 {
 	text-transform: uppercase;
 }
 h1 {
-	font-size: 55px;
+	font-size: 35px;
 }
 h2 {
-	font-size: 45px;
+	font-size: 25px;
 	line-height: 55px;
 }
 h3 {
-	font-size: 26px;
+	font-size: 16px;
 }
 h4 {
-	font-size: 18px;
+	font-size: 14px;
 }
 h5 {
-	font-size: 17px;
+	font-size: 12px;
 }
 h6 {
-	font-size: 16px;
+	font-size: 10px;
 }
 
 /*---------------------------------------
@@ -348,11 +348,11 @@ input:focus {
 
 /*** SECTION HEADERS ***/
 .focus,.works,.about-us,.features,.packages,.products,.testimonial,.contact-us {
-	padding-top: 100px;
+	padding-top: 0.5%;
 }
 .section-header {
 	text-align: center;
-	padding-bottom: 75px;
+	padding-bottom: 12px;
 }
 .section-header h2 {
 	padding-bottom: 10px;
@@ -401,7 +401,7 @@ input:focus {
 
 .header {
 	background: rgba(0, 0, 0, 0.5);
-	min-height: 775px;
+	min-height: 550px;
 	position: relative;
 	overflow: hidden;
 }
@@ -479,7 +479,7 @@ input:focus {
 /*----  SECTION:  HOME > INTRO AND SHORT MSGS   ----*/
 .intro {
 	text-align: center;
-	font-size: 46px !important;
+	font-size: 36px !important;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #FFF;
@@ -493,7 +493,7 @@ input:focus {
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
 	color: #fff;
-	font-size: 36px !important;
+	font-size: 26px !important;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -602,7 +602,7 @@ input:focus {
 
 .separator-one {
 	background: rgba(52, 210, 147, 0.8);
-	padding: 100px 0 100px 0;
+	padding: 0.5% 0 0.5% 0;
 }
 .separator-one .green-btn {
 	background: #14a168;
@@ -619,10 +619,10 @@ input:focus {
 }
 
 .compare {
-    padding-bottom: 100px;
+    /*padding-bottom: 100px;*/
     background: #FFFFFF;
     min-height: auto;
-    padding-top: 5%;
+    padding-top: 0.5%;
 }
 
 /*---------------------------------------
@@ -632,7 +632,7 @@ input:focus {
 .works {
 	padding-bottom: 100px;
 	background: #FFFFFF;
-	min-height: 800px;
+	/*min-height: 800px;*/
 }
 
 /* IMAGE GRID */
@@ -1029,13 +1029,13 @@ width: -webkit-calc(100% / 2);
 -----------------------------------------*/
 .stats_compare {
     background: rgba(0, 0, 0, 0.5);
-    padding: 100px 0 60px 0 !important;
+    padding: 1% 0 1% 0 !important;
     clear: both;
 }
 
 .stats {
 	background: rgba(0, 0, 0, 0.5);
-	padding: 100px 0 60px 0 !important;
+	padding: 1% 0 1% 0 !important;
 	clear: both;
 }
 .stat {
@@ -1281,34 +1281,34 @@ width: -webkit-calc(100% / 2);
 .products .color-overlay {
 	background: rgba(39,144,176, 0.96);
 	margin-top: -100px;
-	padding-top: 100px;
+	padding-top: 0.5%;
 	padding-bottom: 70px;
 }
 
 /*--ITEMS IMAGES--*/
 .item-1 {
-	background-image: url(../images/products/1.jpg);
+	background-image: url(../images/projects/phoenix_p7_pp.jpg);
 }
 .item-2 {
-	background-image: url(../images/products/2.jpg);
+	background-image: url(../images/projects/phoenix_p50_pp.jpg);
 }
 .item-3 {
-	background-image: url(../images/products/3.jpg);
+	background-image: url(../images/projects/phoenix_p160_pp.jpg);
 }
 .item-4 {
-	background-image: url(../images/products/4.jpg);
+	background-image: url(../images/projects/phoenix_p250_pp.jpg);
 }
 .item-5 {
-	background-image: url(../images/products/5.jpg);
+	background-image: url(../images/projects/phoenix_p160_pp.jpg);
 }
 .item-6 {
-	background-image: url(../images/products/6.jpg);
+	background-image: url(../images/projects/phoenix_p7_pvdf_cf.jpg);
 }
 .item-7 {
-	background-image: url(../images/products/7.jpg);
+	background-image: url(../images/projects/phoenix_p700_pp.jpg);
 }
 .item-8 {
-	background-image: url(../images/products/8.jpg);
+	background-image: url(../images/projects/phoenix_pf100_aisi.jpg);
 }
 
 /*---ITEM STYLE ---*/
@@ -1540,8 +1540,8 @@ width: -webkit-calc(100% / 2);
 
 .purchase-now {
 	background: #e96656;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding: 0.5% 0 0.5% 0;
+
 }
 .purchase-now h3 {
 	text-align: left;
