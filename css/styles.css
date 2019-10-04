@@ -428,7 +428,7 @@ input:focus {
 }
 .navbar-inverse .navbar-nav>li {
 	display: inline;
-	margin-right: 20px;
+	margin-right: 75px;
 	margin-top: 20px;
 }
 .navbar-inverse .navbar-nav>li:last-child {
@@ -438,6 +438,9 @@ input:focus {
 	color: #404040;
 	padding: 0;
 	line-height: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .navbar-brand {
 	height: 76px;

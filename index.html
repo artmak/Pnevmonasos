@@ -49,7 +49,7 @@
 
     <style>
         .top-bar{
-            margin-top: 10%;
+            margin: 5.5% 0 -5.5% 0;
             text-align: left;
             color: grey;
             background: rgba(11, 121, 179, 0.9);
@@ -62,223 +62,236 @@
             font-size: 14px;
             border-bottom: solid 1px #4190b9;
         }
-        /* Hover */
-        .grid {
-            position: relative;
-            clear: both;
-            margin: 0 auto;
-            padding: 1em 0 4em;
-            max-width: 1000px;
-            list-style: none;
-            text-align: center;
-        }
+        /*!* Hover *!*/
+        /*.grid {*/
+        /*    position: relative;*/
+        /*    clear: both;*/
+        /*    margin: 0 auto;*/
+        /*    padding: 1em 0 4em;*/
+        /*    max-width: 1000px;*/
+        /*    list-style: none;*/
+        /*    text-align: center;*/
+        /*}*/
 
-        /* Common style */
-        .grid figure {
-            position: relative;
-            float: left;
-            overflow: hidden;
-            margin: 10px 1%;
-            min-width: 250px;
-            max-width: 350px;
-            max-height: 360px;
-            #width: 48%;
-            height: auto;
-            background: #3085a3;
-            text-align: center;
-            cursor: pointer;
-        }
-        .grid figure.compare {
-            position: relative;
-            float: left;
-            overflow: hidden;
-            margin: 10px 1%;
-            min-width: 250px;
-            max-width: 250px;
-            max-height: 240px;
-            width: 48%;
-            height: auto;
-            #background: #3085a3;
-            text-align: center;
-            cursor: pointer;
-        }
+        /*!* Common style *!*/
+        /*.grid figure {*/
+        /*    position: relative;*/
+        /*    float: left;*/
+        /*    overflow: hidden;*/
+        /*    margin: 10px 1%;*/
+        /*    min-width: 250px;*/
+        /*    max-width: 350px;*/
+        /*    max-height: 360px;*/
+        /*    #width: 48%;*/
+        /*    height: auto;*/
+        /*    background: #3085a3;*/
+        /*    text-align: center;*/
+        /*    cursor: pointer;*/
+        /*}*/
+        /*.grid figure.compare {*/
+        /*    position: relative;*/
+        /*    float: left;*/
+        /*    overflow: hidden;*/
+        /*    margin: 10px 1%;*/
+        /*    min-width: 250px;*/
+        /*    max-width: 250px;*/
+        /*    max-height: 240px;*/
+        /*    width: 48%;*/
+        /*    height: auto;*/
+        /*    #background: #3085a3;*/
+        /*    text-align: center;*/
+        /*    cursor: pointer;*/
+        /*}*/
 
-        .grid figure img {
-            position: relative;
-            display: block;
-            min-height: 100%;
-            max-width: 100%;
-            opacity: 0.8;
-        }
+        /*.grid figure img {*/
+        /*    position: relative;*/
+        /*    display: block;*/
+        /*    min-height: 100%;*/
+        /*    max-width: 100%;*/
+        /*    opacity: 0.8;*/
+        /*}*/
 
-        .grid figure figcaption, figcaption {
-            padding: 2em;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 1.25em;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
+        /*.grid figure figcaption, figcaption {*/
+        /*    padding: 2em;*/
+        /*    color: #fff;*/
+        /*    text-transform: uppercase;*/
+        /*    font-size: 1.25em;*/
+        /*    -webkit-backface-visibility: hidden;*/
+        /*    backface-visibility: hidden;*/
+        /*}*/
 
-        .grid figure figcaption::before,
-        .grid figure figcaption::after {
-            pointer-events: none;
-        }
+        /*.grid figure figcaption::before,*/
+        /*.grid figure figcaption::after {*/
+        /*    pointer-events: none;*/
+        /*}*/
 
-        .grid figure figcaption,
-        .grid figure figcaption > a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+        /*.grid figure figcaption,*/
+        /*.grid figure figcaption > a {*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*}*/
 
-        /* Anchor will cover the whole item by default */
-        /* For some effects it will show as a button */
-        .grid figure figcaption > a {
-            z-index: 1000;
-            text-indent: 200%;
-            white-space: nowrap;
-            font-size: 0;
-            opacity: 0;
-        }
+        /*!* Anchor will cover the whole item by default *!*/
+        /*!* For some effects it will show as a button *!*/
+        /*.grid figure figcaption > a {*/
+        /*    z-index: 1000;*/
+        /*    text-indent: 200%;*/
+        /*    white-space: nowrap;*/
+        /*    font-size: 0;*/
+        /*    opacity: 0;*/
+        /*}*/
 
-        .grid figure h4, figcaption h4 {
-            word-spacing: -0.15em;
-            font-weight: 500;
-            text-shadow: 1px 2px 1px #0a0a0a;
-        }
+        /*.grid figure h4, figcaption h4 {*/
+        /*    word-spacing: -0.15em;*/
+        /*    font-weight: 500;*/
+        /*    margin-top: 20px;*/
 
-        .grid figure h4 span, figcaption h4 span {
-            font-weight: 800;
-        }
+        /*    text-transform: uppercase;*/
 
-        .grid figure h4,
-        .grid figure p, figcaption h4 {
-            margin: 0;
-        }
+        /*    font-size: 16px;*/
 
-        .grid figure p, figcaption p {
-            letter-spacing: 1px;
-            font-size: 68.5%;
-        }
-        figcaption p{
-            collor; #737373;
+        /*    color:*/
+        /*            #489bc6;*/
 
-        }
-        /* Individual effects */
+        /*    display: block;*/
 
-        figure.prod-it {
+        /*    font-weight: bold;*/
 
-            width: 100%;
-            height: auto;
-            border: solid 1px #dbdbdb;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 30px;
-            transition: 0.3s;
-            overflow: hidden;
+        /*    transition: 0.3s;*/
+        /*}*/
 
-        }
+        /*.grid figure h4 span, figcaption h4 span {*/
+        /*    font-weight: 800;*/
+        /*}*/
 
-        figure.prod-it:hover {
+        /*.grid figure h4,*/
+        /*.grid figure p, figcaption h4 {*/
+        /*    margin: 0;*/
+        /*}*/
 
-            box-shadow: 3px 4px 4px 1px
+        /*.grid figure p, figcaption p {*/
+        /*    letter-spacing: 1px;*/
+        /*    font-size: 68.5%;*/
+        /*}*/
+        /*figcaption p{*/
+        /*    collor; #737373;*/
 
-            #aaa;
+        /*}*/
+        /*!* Individual effects *!*/
 
-        }
-        figure.effect-julia {
-            background: #2f3238;
-        }
+        /*figure.prod-it {*/
 
-        figure.effect-julia img.compare {
-            margin: -20px 0px 0px 0px;
-            max-width: none;
-            min-width: 263px;
-            height: 345px;
-            -webkit-transition: opacity 1s, -webkit-transform 1s;
-            transition: opacity 1s, transform 1s;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-        figure.effect-julia img.catalog {
-            max-width: none;
-            min-width: 250px;
-            height: 300px;
-            -webkit-transition: opacity 1s, -webkit-transform 1s;
-            transition: opacity 1s, transform 1s;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
+        /*    width: 100%;*/
+        /*    height: auto;*/
+        /*    border: solid 1px #dbdbdb;*/
+        /*    text-align: center;*/
+        /*    padding: 30px 0;*/
+        /*    margin-top: 30px;*/
+        /*    transition: 0.3s;*/
+        /*    overflow: hidden;*/
 
-        figure.effect-julia figcaption {
-            text-align: left;
-        }
+        /*}*/
 
-        figure.effect-julia h3 {
-            position: relative;
-            padding: 0.5em 0;
-        }
+        /*figure.prod-it:hover {*/
 
-        figure.effect-julia p {
-            display: inline-block;
-            margin: 0 0 1px 0;
-            padding: 0px 32px 1px 5px;
-            background: rgba(255,255,255,0.9);
-            color: #2f3238;
-            text-transform: none;
-            font-weight: 500;
-            font-size: 75%;
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(-360px,0,0);
-            transform: translate3d(-460px,0,0);
-        }
+        /*    box-shadow: 3px 4px 4px 1px*/
 
-        figure.effect-julia p:first-child {
-            -webkit-transition-delay: 0.15s;
-            transition-delay: 0.15s;
-        }
+        /*    #aaa;*/
 
-        figure.effect-julia p:nth-of-type(2) {
-            -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-        }
+        /*}*/
+        /*figure.effect-julia {*/
+        /*    background: #2f3238;*/
+        /*}*/
 
-        figure.effect-julia p:nth-of-type(3) {
-            -webkit-transition-delay: 0.05s;
-            transition-delay: 0.05s;
-        }
+        /*figure.effect-julia img.compare {*/
+        /*    margin: -20px 0px 0px 0px;*/
+        /*    max-width: none;*/
+        /*    min-width: 263px;*/
+        /*    height: 345px;*/
+        /*    -webkit-transition: opacity 1s, -webkit-transform 1s;*/
+        /*    transition: opacity 1s, transform 1s;*/
+        /*    -webkit-backface-visibility: hidden;*/
+        /*    backface-visibility: hidden;*/
+        /*}*/
+        /*figure.effect-julia img.catalog {*/
+        /*    max-width: none;*/
+        /*    min-width: 250px;*/
+        /*    height: 300px;*/
+        /*    -webkit-transition: opacity 1s, -webkit-transform 1s;*/
+        /*    transition: opacity 1s, transform 1s;*/
+        /*    -webkit-backface-visibility: hidden;*/
+        /*    backface-visibility: hidden;*/
+        /*}*/
 
-        figure.effect-julia:hover p:first-child {
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-        }
+        /*figure.effect-julia figcaption {*/
+        /*    text-align: left;*/
+        /*}*/
 
-        figure.effect-julia:hover p:nth-of-type(2) {
-            -webkit-transition-delay: 0.05s;
-            transition-delay: 0.05s;
-        }
+        /*figure.effect-julia h3 {*/
+        /*    position: relative;*/
+        /*    padding: 0.5em 0;*/
+        /*}*/
 
-        figure.effect-julia:hover p:nth-of-type(3) {
-            -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-        }
+        /*figure.effect-julia p {*/
+        /*    display: inline-block;*/
+        /*    margin: 0 0 1px 0;*/
+        /*    padding: 0px 32px 1px 5px;*/
+        /*    background: rgba(255,255,255,0.9);*/
+        /*    color: #2f3238;*/
+        /*    text-transform: none;*/
+        /*    font-weight: 500;*/
+        /*    font-size: 75%;*/
+        /*    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;*/
+        /*    transition: opacity 0.35s, transform 0.35s;*/
+        /*    -webkit-transform: translate3d(-360px,0,0);*/
+        /*    transform: translate3d(-460px,0,0);*/
+        /*}*/
 
-        figure.effect-julia:hover img {
-            opacity: 0.4;
-            -webkit-transform: scale3d(1.1,1.1,1);
-            transform: scale3d(1.1,1.1,1);
-        }
+        /*figure.effect-julia p:first-child {*/
+        /*    -webkit-transition-delay: 0.15s;*/
+        /*    transition-delay: 0.15s;*/
+        /*}*/
 
-        figure.effect-julia:hover p {
-            opacity: 1;
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-        }
-        /* Enf Hover*/
+        /*figure.effect-julia p:nth-of-type(2) {*/
+        /*    -webkit-transition-delay: 0.1s;*/
+        /*    transition-delay: 0.1s;*/
+        /*}*/
+
+        /*figure.effect-julia p:nth-of-type(3) {*/
+        /*    -webkit-transition-delay: 0.05s;*/
+        /*    transition-delay: 0.05s;*/
+        /*}*/
+
+        /*figure.effect-julia:hover p:first-child {*/
+        /*    -webkit-transition-delay: 0s;*/
+        /*    transition-delay: 0s;*/
+        /*}*/
+
+        /*figure.effect-julia:hover p:nth-of-type(2) {*/
+        /*    -webkit-transition-delay: 0.05s;*/
+        /*    transition-delay: 0.05s;*/
+        /*}*/
+
+        /*figure.effect-julia:hover p:nth-of-type(3) {*/
+        /*    -webkit-transition-delay: 0.1s;*/
+        /*    transition-delay: 0.1s;*/
+        /*}*/
+
+        /*figure.effect-julia:hover img {*/
+        /*    opacity: 0.4;*/
+        /*    -webkit-transform: scale3d(1.1,1.1,1);*/
+        /*    transform: scale3d(1.1,1.1,1);*/
+        /*}*/
+
+        /*figure.effect-julia:hover p {*/
+        /*    opacity: 1;*/
+        /*    -webkit-transform: translate3d(0,0,0);*/
+        /*    transform: translate3d(0,0,0);*/
+        /*}*/
+        /*!* Enf Hover*!*/
 
 
         .t-align>*,
@@ -354,6 +367,46 @@
             margin-right: 0px;
             margin-top: 0px;
         }
+
+        .product-item {
+            margin: 0;
+            min-height: 340px;
+        }
+        .product-img {
+            width: 100%;
+            height: auto;
+            border: solid 1px #dbdbdb;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+            display: block;
+            overflow: hidden;
+        }
+        .product-img:hover{
+            box-shadow: 3px 4px 4px 1px #aaa
+        }
+
+        .product-img img{
+            height: 200px;
+            width: auto;
+            transition: 0.3s;
+        }
+        .product-img:hover img{
+            transform: scale(1.2);
+        }
+        .product-item-title {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #489bc6;
+            display: block;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .product-item-title:hover {
+            color: #000;
+        }
     </style>
 </head>
 
@@ -375,7 +428,7 @@
 		<div class="container">
             <a class="navbar-brand">
                 <!--				<img src="images/logo.png" alt="Zerif">-->
-                <h3>Pnevmonasos.com.ua</h3>
+                <h3 style="text-transform: uppercase">Pnevmonasos.com.ua</h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -388,8 +441,8 @@
 				<li class="nav-item" hidden><a href="#keys">Про 5 ключей</a></li>
 				<li class="nav-item"><a href="#catalog">Каталог</a></li>
 				<li hidden><a href="#aboutus">Про нашу компанию</a></li>
-				<li><a href="#innovations">Инновации</a></li>
-				<li><a href="#products">Бестселлеры</a></li>
+				<li><a href="#posts">Статьи</a></li>
+				<li><a href="#products">Частые запросы</a></li>
 				<li><a href="#contact">Связаться с нами</a></li>
 			</ul>
 			</div>
@@ -398,18 +451,18 @@
 	<!-- / END TOP BAR -->
 	
 	<!-- BIG HEADING WITH CALL TO ACTION BUTTONS AND SHORT MESSAGES -->
-	<div class="container">
+	<div class="mx-auto" style="width: 90%">
         <div class="row">
             <div class="col-4 top-bar">
                 <!-- navbar menu other -->
-                <nav class="nav flex-column">
-                    <a class="nav-link" href="standart.html">Мембранные пневмонасосы</a>
-                    <a class="nav-link" href="atex.html">Пневмонасосы ATEX</a>
-                    <a class="nav-link" href="food.html">Насосы для пищевой проммышленности</a>
-                    <a href="compare.html" class="nav-link">Сравнение пневмонасосов</a>
-                    <a href="principle_of_operation.html" class="nav-link">Принцип работы пневмонасосов</a>
-                    <a href="selection.html" class="nav-link">Подбор насоса</a>
-                    <a href="installation.html" class="nav-link">Примеры монтажа</a>
+                <nav class="nav flex-column" style="margin-top: 3%">
+                    <a class="nav-link" href="standart.html">Мембранные пневматические насосы</a>
+                    <a class="nav-link" href="atex.html">Взрывозащитные диафрагменные насосы</a>
+                    <a class="nav-link" href="food.html">Пищевые насосы</a>
+                    <a href="compare.html" class="nav-link">Приимущества пневматических насосов</a>
+                    <a href="principle_of_operation.html" class="nav-link">Принцип работы мембранного насоса</a>
+                    <a href="selection.html" class="nav-link">Правильно подобрать мембранный насос</a>
+                    <a href="installation.html" class="nav-link">Запасные части к мембранным насосам</a>
 
                 </nav>
             </div>
@@ -443,7 +496,7 @@
         <div class="section-header">
 
             <!-- SECTION TITLE -->
-            <h2 class="dark-text">Сравнение - Принцип работы - Подбор - Варианты монтажа</h2>
+            <h2 class="dark-text">Приимущества пневматических насосов, принцип работы мембранного насоса и как правильно подобрать мембранный насос</h2>
 
             <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
             <h6>
@@ -457,65 +510,35 @@
             </div>
             <div class="col-md-12 row" id="compare_portfolio-list">
                 <!-- PORTFOLIO ITEMS-->
-                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                    <div class="grid">
-                        <figure class="prod-it compare">
-                            <img class="" src="/images/projects/phoenix_p7_per.jpg" alt="img21">
-                            <figcaption>
-                                <h4>Пневмонасос SK Duoteck <span>сравнение</span></h4>
-                                <div>
-                                    <p>Особенности пневматических насосов</p>
-
-
-                                </div>
-                                <a href="compare.html" class="compare_more">View more</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                    <div class="grid">
-                        <figure class="prod-it compare">
-                            <img class="" src="/images/projects/phoenix_p7_pp.jpg" alt="img21">
-                            <figcaption>
-                                <h4 hidden>Пневмонасос SK Duoteck <span>принцип работы</span></h4>
-                                <div hidden>
-                                    <p>Особенности пневматических насосов</p>
-
-
-                                </div>
-                                <a href="principle_of_operation.html" class="compare_more">View more</a>
-                            </figcaption>
-                        </figure>
-
+                <div class="col-4 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                    <div class="product-item">
+                        <a href="compare.html" class="product-img">
+                            <img src="/images/projects/phoenix_p7_per.jpg" class="cat-img">
+                        </a>
+                        <a href="compare.html" class="product-item-title">Приимущества пневматических насосов</a>
                     </div>
 
-                    <figcaption>
-                        <h4>Пневмонасос SK Duoteck <span>принцип работы</span></h4>
-                        <div hidden>
-                            <p>Особенности пневматических насосов</p>
-
-
-                        </div>
-                    </figcaption>
                 </div>
-                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                    <div class="grid">
-                        <figure class="effect-julia compare">
-                            <img class="" src="/images/projects/phoenix_pf700_aisi.jpg" alt="img21">
-                            <figcaption>
-                                <h4>Пневмонасос SK Duoteck <span>подбор</span></h4>
-                                <div>
-
-                                    <p>Таблица стравнения</p>
-
-                                </div>
-                                <a href="selection.html" class="compare_more">View more</a>
-                            </figcaption>
-                        </figure>
+                <div class="col-4 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                    <div class="product-item">
+                        <a href="principle_of_operation.html" class="product-img">
+                            <img src="/images/projects/phoenix_p7_pp.jpg" class="cat-img">
+                        </a>
+                        <a href="principle_of_operation.html" class="product-item-title">Принцип работы мембранного насоса</a>
                     </div>
+
                 </div>
-                <div class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                <div class="col-4 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+                    <div class="product-item">
+                        <a href="selection.html" class="product-img">
+                            <img src="/images/projects/phoenix_pf700_aisi.jpg" class="cat-img">
+                        </a>
+                        <a href="selection.html" class="product-item-title">Подбор мембранного насоса</a>
+                    </div>
+
+
+                </div>
+                <div hidden class="col-3 wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
                     <div class="grid">
                         <figure class="effect-julia compare">
                             <img class="" src="/images/projects/phoenix_pf700_aisi.jpg" alt="img21">
@@ -546,7 +569,7 @@
     </div> <!-- / END CONTAINER -->
 </section> <!-- / END COMPARE SECTION -->
 
-<section class="stats_compare">
+<section class="stats_compare" hidden>
     <div class="container">
         <!-- STATS -->
         <div class="row">
@@ -735,7 +758,15 @@
 	<div class="col-md-12 row" id="portfolio-list">
 		<!-- PORTFOLIO ITEMS-->
         <div class="col-4">
-            <div class="grid">
+
+            <div class="product-item">
+                <a href="standart.html" class="product-img more">
+                    <img src="images/main_page/st.png" class="cat-img">
+                </a>
+                <a href="standart.html" class="more product-item-title">Мембранные пневматические насосы</a>
+            </div>
+
+            <div class="grid" hidden>
                 <figure class="effect-julia">
                     <img class="catalog" src="images/main_page/st.png" alt="img21">
                     <figcaption>
@@ -750,11 +781,18 @@
             </div>
         </div>
         <div class="col-4">
-            <div class="grid">
+            <div class="product-item">
+                <a href="atex.html" class="product-img more">
+                    <img src="images/main_page/atex.png" class="cat-img">
+                </a>
+                <a href="atex.html" class="more product-item-title">Взрывозащитные дафрагменные насосы</a>
+            </div>
+
+            <div class="grid" hidden>
                 <figure class="effect-julia">
                     <img class="catalog" src="images/main_page/atex.png" alt="img21">
                     <figcaption>
-                        <h4>Пневмонасосы серии <span>- ATEX</span></h4>
+                        <h4></h4>
                         <div>
                             <p>Взрывозащитные мембранные насосы</p>
 
@@ -765,7 +803,13 @@
             </div>
         </div>
         <div class="col-4">
-            <div class="grid">
+            <div class="product-item">
+                <a href="food.html" class="product-img more">
+                    <img src="images/main_page/fd.png" class="cat-img">
+                </a>
+                <a href="food.html" class="more product-item-title">Пищевые насосы</a>
+            </div>
+            <div class="grid" hidden>
                 <figure class="effect-julia">
                     <img class="catalog" src="images/main_page/fd.png" alt="img21">
                     <figcaption>
@@ -1035,9 +1079,9 @@
 
 
 <!-- =========================
-   innovations SECTION
+   posts SECTION
 ============================== -->
-<section class="features" id="innovations">
+<section class="features" id="posts">
 <div class="container">
 		
 		<!-- SECTION HEADER -->
